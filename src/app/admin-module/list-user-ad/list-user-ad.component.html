@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="card text-center">
+    <!-- Header -->
+    <div class="card-header myCardHeader">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-left text-primary font-weight-bold">Danh sách người dùng</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="card-body">
+      <table class="table table-bordered table-hover myTable">
+        <thead class="text-primary">
+          <tr>
+            <th class="nowrap">
+              <span class="mr-1">ID user</span>
+            </th>
+            <th>Tên đăng nhập</th>
+            <th>Họ tên đầy đủ</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="tableDanhSach" *ngFor="let item of listUser">
+          <tr class="text-left">
+            <td class="text-center">{{item.id}}</td>
+            <td>{{item.username}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer myCardFooter">
+    </div>
+  </div>
+</div>

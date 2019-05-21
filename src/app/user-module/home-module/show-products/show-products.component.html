@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="my-3">
+        <ng-content></ng-content>
+      </h3>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3" *ngFor="let item of data">
+      <app-product [product]="item"></app-product>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+* {
+    background: #343a40;
+    color: #949494;
+}
+a:hover {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+h6 {
+    color: #fff;
+}

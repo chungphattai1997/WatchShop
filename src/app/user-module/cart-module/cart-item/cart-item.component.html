@@ -1,0 +1,15 @@
+<ng-container *ngIf="cart">
+  <h3 class="text-center mt-3y">{{cart.title}}</h3>
+  <div class="cart">
+    <div class="cart-title">
+      <img [src]="'data:image/jpeg;base64,'+cart.image" alt="">
+    </div>
+    <div class="cart-item">
+      <span class="mr-5">{{cart.price}}</span>
+      <button class="btn p-0 btn-default" (click)="amountCart(false)"><i class="fas fa-caret-down"></i></button>
+      <span class="text-center px-2 amount">{{amount}}</span>
+      <button class="btn p-0 btn-default" (click)="amountCart(true)"><i class="fas fa-caret-up"></i></button>
+      <button class="btn btn-danger mx-4" (click)="removeCart()">Xóa khỏi giỏ hàng</button>
+    </div>
+  </div>
+</ng-container>

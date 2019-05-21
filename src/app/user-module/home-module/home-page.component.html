@@ -1,0 +1,5 @@
+<app-carousel></app-carousel>
+
+<div *ngFor="let item of listProduct">
+  <app-show-products [data]="item.data">{{item.title}}</app-show-products>
+</div>

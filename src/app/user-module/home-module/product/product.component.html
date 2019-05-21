@@ -1,0 +1,9 @@
+  <a [routerLink]="['/detail', product.id, product.title]" class="card my-3 mx-2">
+
+    <img class="card-img-top p-3" [src]="'data:image/jpg;base64,'+product.image+''" />
+    
+    <div class="card-body">
+      <h5 class="card-title">{{product.title}}</h5>
+      <p class="card-text text-right">{{product.price}}</p>
+    </div>
+  </a>
